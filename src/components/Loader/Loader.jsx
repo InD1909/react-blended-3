@@ -1,3 +1,10 @@
+import { BeatLoader } from 'react-spinners';
+import style from './Loader.module.css';
+
 export const Loader = () => {
-  return <h2>Loader</h2>;
+  return (
+    <div className={style.backdrop}>
+      <BeatLoader color="#0fa5f9" />;
+    </div>
+  );
 };
